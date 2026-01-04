@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ctrl+Alt-Caged | Details</title>
+    <style>
+        @font-face { font-family: 'StoneBird-1'; src: url('fonts/StoneBird-1.ttf') format('truetype'); font-weight: normal; }
+        @font-face { font-family: 'JetBrains-Regular'; src: url('fonts/JetBrainsMono-Regular-2.ttf') format('truetype'); font-weight: normal; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #000; font-family: 'JetBrains-Regular', monospace; overflow-x: hidden; }
+        :root { --neon-green: #9FFF30; }
+        nav { background-color: #000; height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 3%; position: fixed; top: 0; width: 100%; z-index: 1000; }
+        .nav-brand, .nav-links a.active { background-color: var(--neon-green); color: #000; font-family: 'StoneBird-1', sans-serif; font-size: 1.4rem; text-decoration: none; height: 38px; display: flex; align-items: center; justify-content: center; padding: 0 18px; border-radius: 50px; line-height: 1; }
+        .nav-links { display: flex; align-items: center; gap: 40px; }
+        .nav-links a { color: var(--neon-green); font-family: 'StoneBird-1', sans-serif; font-size: 1.8rem; text-decoration: none; transition: opacity 0.3s; display: flex; align-items: center; height: 38px; }
+        .nav-links a:hover { opacity: 0.7; }
+        .icon-youtube svg { width: 30px; fill: var(--neon-green); transition: transform 0.3s; }
+        .icon-youtube:hover svg { transform: scale(1.1); }
+        .detail-container { width: 100%; padding-top: 80px; background-color: #000; }
+        .slice-img { display: block; width: 100%; height: auto; border: none; margin: 0; }
+        .project-footer { height: 150px; background-color: #000; display: flex; justify-content: center; align-items: center; gap: 30px; border-top: 2px solid var(--neon-green); margin-top: -1px; }
+        .footer-link { 
+            font-family: 'StoneBird-1', sans-serif; 
+            
+            /* NEW: Filled Green Background */
+            background-color: var(--neon-green);
+            color: #000; 
+            
+            /* NEW: Larger Text */
+            font-size: 1.8rem; 
+            
+            text-decoration: none; 
+            border: 1px solid var(--neon-green); 
+            
+            /* NEW: Smaller Box Size */
+            width: 260px;
+            height: 55px;
+            
+            /* Flexbox Centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1;
+            padding: 0;
+            
+            border-radius: 50px; 
+            transition: all 0.3s; 
+        }
+
+
+        .footer-link:hover { background-color: var(--neon-green); color: #000; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-brand">Abiegale Lai</a>
+
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#contact-area">Contact</a>
+            <a href="https://youtu.be/tiJOiDbhWT0" target="_blank" class="icon-youtube"><svg viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg"><path d="M36.6363 6.0693e-07L3.36533 6.0693e-07C2.77463 -0.000340635 2.19425 0.143219 1.68259 0.416235C1.17092 0.68925 0.746031 1.08209 0.450658 1.55523C0.155285 2.02837 -0.000147176 2.56511 1.45957e-07 3.11146L1.45957e-07 24.8897C0.000147635 25.4359 0.155764 25.9724 0.451204 26.4454C0.746644 26.9183 1.17149 27.3109 1.68304 27.5838C2.19459 27.8567 2.7748 28.0003 3.36533 28L36.6363 28C37.2268 28 37.8069 27.8562 38.3183 27.5831C38.8297 27.31 39.2543 26.9172 39.5495 26.4442C39.8447 25.9712 40.0001 25.4347 40 24.8885L40 3.11146C40.0001 2.56529 39.8448 2.02871 39.5496 1.55568C39.2544 1.08265 38.8298 0.689838 38.3184 0.416753C37.807 0.143668 37.2269 -6.75446e-05 36.6363 6.0693e-07ZM14.0233 22.7922L14.0233 5.20893L30.4868 14.0004L14.0233 22.7922Z" fill="#9FFF30" fill-rule="nonzero" /></svg></a>
+        </div>
+    </nav>
+
+    <div class="detail-container">
+        <img src="images/projects_details/project2/2.jpg" alt="Intro" class="slice-img">
+        <img src="images/projects_details/project2/2.1.jpg" alt="Detail 1" class="slice-img">
+        <img src="images/projects_details/project2/2.2.jpg" alt="Detail 2" class="slice-img">
+        <img src="images/projects_details/project2/2.3.jpg" alt="Detail 3" class="slice-img">
+        <img src="images/projects_details/project2/2.4.jpg" alt="Detail 4" class="slice-img">
+        <img src="images/projects_details/project2/2.5.jpg" alt="Detail 5" class="slice-img">
+    </div>
+
+    <footer class="project-footer">
+        <a href="projects.html" class="footer-link">Back to Projects</a>
+        <a href="p3_prism.html" class="footer-link">Next Project ></a>
+    </footer>
+</body>
+</html>
